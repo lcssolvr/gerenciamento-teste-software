@@ -1,0 +1,8 @@
+:root{
+  --bg:#f5f7fb;
+  --fg:#0f172a;
+  --border:#e5e7eb;
+  --muted:#64748b;
+  --danger:#dc2626;
+}
+body{background:var(--bg);color:var(--fg);}

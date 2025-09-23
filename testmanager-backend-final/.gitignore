@@ -1,0 +1,12 @@
+# Node
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Env files
+.env
+.env.local
+.env.*.local
+
+# Firebase credentials (não versionar a chave privada)
+firebase-service-account.json

@@ -1,0 +1,45 @@
+/* src/assets/layout-fixes.css */
+
+/* a área de conteúdo pode expandir */
+.content { min-width: 0; }
+
+/* remove limites herdados (page/container/etc.) dentro do conteúdo */
+.content .page,
+.content .container,
+.content .wrapper,
+.content .page-wrap {
+  max-width: none !important;
+  width: 100% !important;
+}
+
+/* utilitário para páginas fluidas */
+.page-fluid {
+  padding: 24px;
+  max-width: none !important;
+  width: 100% !important;
+}
+
+/* cabeçalho horizontal (título + ações + busca) */
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+/* cards/tabelas ocupam 100% */
+.full-card { width: 100%; }
+
+/* textos auxiliares */
+.muted { color: #64748b; }
+
+/* grid responsivo de cards */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: 16px;
+}
+@media (max-width: 1024px) { .stats-grid { grid-template-columns: repeat(2, minmax(220px, 1fr)); } }
+@media (max-width: 640px)  { .stats-grid { grid-template-columns: 1fr; } }
